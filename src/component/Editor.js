@@ -1,7 +1,7 @@
 import { useState } from "react"
 import React from 'react'
 import "../style/editor.scss"
-import { CompactPicker } from 'react-color'
+import { SwatchesPicker } from 'react-color'
 import DrawingPanel from "./DrawingPanel"
 
 export default function Editor() {
@@ -55,7 +55,7 @@ export default function Editor() {
                 onClick={startdrawing}
             >{buttontext}</button>
 
-            {hideoption && (<CompactPicker color={selectedColor} onChange={changecolor} />)}
+            {hideoption && (<SwatchesPicker color={selectedColor} onChange={changecolor} />)}
 
             {hideoption && (<DrawingPanel
                 width={panelWidth}
