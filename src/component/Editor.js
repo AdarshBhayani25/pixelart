@@ -55,7 +55,7 @@ export default function Editor() {
                 onClick={startdrawing}
             >{buttontext}</button>
 
-            {hideoption && (<SwatchesPicker color={selectedColor} onChange={changecolor} />)}
+            {hideoption && (<SwatchesPicker color={selectedColor} onChange={changecolor} id="colorpicker" />)}
 
             {hideoption && (<DrawingPanel
                 width={panelWidth}
